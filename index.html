@@ -1,0 +1,886 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- GOOGLE FONT  -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>StackOverflow</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top">
+        <a class="navbar-brand" href="#">stack <span style="font-weight: 700;">overflow</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Home</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item disabled">Public</a>
+                        <a class="dropdown-item" href="#">Questions</a>
+                        <a class="dropdown-item" href="#">Tags</a>
+                        <a class="dropdown-item" href="#">Users</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item disabled">FIND A JOB</a>
+                        <a class="dropdown-item" href="#">Jobs</a>
+                        <a class="dropdown-item" href="#">Companies</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item disabled">Teams</a>
+                        <a class="dropdown-item disabled text-wrap">
+                            <span class="font-weight-bold">
+                                Stack Overflow for Teams
+                            </span> – Collaborate and share knowledge with a private group.
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <button class="btn btn-sec w-100">Create a free Team</button>
+                        </a>
+                        <a class="dropdown-item text-muted" style="font-size: 14px;" href="#">What's a Team ?</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">For Teams</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 ">
+                <input class="form-control mr-sm-2" type="search" placeholder="  &#128269; Search..."
+                    aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0 mx-2" type="submit">Log in</button>
+                <button class="btn btn-sec my-2 my-sm-0" type="submit">Sign up</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- FRONT  -->
+    <div class="container front px-4">
+        <div class="row gx-5">
+            <div class="col-lg-6 text-center mx-auto">
+                <div class="p-3 bg-col-pri frontBorder">
+                    <i class="fa fa-search fa-3x" aria-hidden="true"></i>
+                    <p class="">Find the best answer to your technical question, help others answer theirs</p>
+                    <button class="btn btn-pri d-block mx-auto font-weight-bold">Join the community</button>
+                    <a href="">or <span>search content</span></a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center mx-auto">
+                <div class="p-3 bg-col-sec frontBorder">
+                    <i class="fas fa-3x fa-lock"></i>
+                    <p class="">Want a secure, private space for your technical knowledge?</p>
+                    <button class="btn btn-sec d-block mx-auto font-weight-bold">Join the community</button>
+                    <a href="">or <span>create a free team</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div>
+                    <h1 class="text-center">
+                        Every <span>developer data scientist system</span> adminmobile developergame developer has a
+                        tab open to Stack Overflow
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row frontAdv">
+            <div class="col-lg-3">
+                <div>
+                    <h5>100+ million</h5>
+                    <p>monthly visitors to Stack Overflow & Stack Exchange</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <h5>45.1+ billion</h5>
+                    <p>Times a developer got help since 2008</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <h5>179% ROI</h5>
+                    <p class="">from companies using Stack Overflow for Teams</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <h5>5,000+</h5>
+                    <p>Stack Overflow for Teams instances active every day</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COMPARISON  -->
+    <div class="container comparison">
+        <div class="row ">
+            <div class="col-lg-6 mx-auto text-center">
+                <div class="p-3 bg-col-pri">
+                    <h3>stack <span class="font-weight-bold">overflow</span></h3>
+                    <img class="w-100" src="https://cdn.sstatic.net/Img/home/illo-public.svg?v=14bd5a506009" alt="">
+                    <h4 class="font-weight-bold">
+                        A public platform building the definitive collection of coding questions & answers
+                    </h4>
+                    <p class="text-muted">A community-based space to find and contribute answers to technical
+                        challenges, and one of the most popular websites in
+                        the world.
+                    </p>
+                    <button class="btn btn-pri d-block mx-auto font-weight-bold mt-5 my-2">Join the community</button>
+                    <div class="my-3">
+                        <a href="">or <span>search content</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mx-auto text-center">
+                <div class="p-3 bg-col-sec">
+                    <h3><span class="font-weight-bold">FOR TEAMS</span></h3>
+                    <img class="w-100" src="https://cdn.sstatic.net/Img/home/illo-teams.svg?v=7e543f14fcc0" alt="">
+                    <h4 class="font-weight-bold">
+                        A private collaboration & knowledge sharing SaaS platform for companies
+                    </h4>
+                    <p class="text-muted mb-xl-0">
+                        A web-based platform to increase productivity, decrease cycle times, accelerate time to market,
+                        and protect
+                        institutional knowledge.
+                    </p>
+                    <p class="mb-xl-0 d-none d-xl-block">&nbsp;</p>
+                    <button class="btn btn-sec d-block mx-auto font-weight-bold mt-5 my-2">Create a free team</button>
+                    <div class="my-3">
+                        <a href="">or <span>discover Teams</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADS  -->
+    <div class="container-fluid ads">
+        <h5 class="text-secondary text-center">
+            Stack Overflow for Teams is used by thousands of organizations around the globe
+        </h5>
+        <div class="row">
+            <div class="col">
+                <div class="images d-flex flex-row justify-content-center flex-wrap">
+                    <img src="https://cdn.sstatic.net/Img/product/teams/logos/box-alt.svg?v=eb76fd9d884f" alt="">
+                    <img src="https://cdn.sstatic.net/Img/product/teams/logos/expensify-alt.svg?v=09697472a3f5" alt="">
+                    <img src="https://cdn.sstatic.net/Img/product/teams/logos/intercom-alt.svg?v=3eda71aed47c" alt="">
+                    <img src="https://cdn.sstatic.net/Img/product/teams/logos/microsoft-alt.svg?v=e57319450314" alt="">
+                    <img src="https://cdn.sstatic.net/Img/product/teams/logos/bloomberg-alt.svg?v=9fc4f6650377" alt="">
+                    <img src="https://cdn.sstatic.net/Img/product/teams/logos/instacart-alt.svg?v=15bd0b39b197" alt="">
+                    <img src="https://cdn.sstatic.net/Img/product/teams/logos/barkbox-alt.svg?v=419890745024" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SPECS  -->
+    <div class="container-fluid specs">
+        <div class="row">
+            <!-- PICS  -->
+            <div class="col-lg-9 mx-auto">
+                <div class="d-flex flex-row justify-content-center specsImgContainer">
+                    <div class="col-lg-3">
+                        <img class="w-100"
+                            src="https://cdn.sstatic.net/Img/product/teams/screens/illo-question.png?v=14c5863a5550"
+                            alt="" style="color: white;">
+                    </div>
+                    <div class="col-lg-3">
+                        <img class="specsMidImg border-dark w-100" style="z-index: 1001;"
+                            src="https://cdn.sstatic.net/Img/product/teams/screens/illo-for-you.png?v=ab49238abe04"
+                            alt="">
+                    </div>
+                    <div class="col-lg-3">
+                        <img class="w-100"
+                            src="https://cdn.sstatic.net/Img/product/teams/screens/illo-home-search.png?v=1ccd850cd929"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SPEC CARD  -->
+        <div class="container-fluid">
+            <div class="row bg-gradient-black specRow2">
+                <div class="col-lg-10 mx-auto text-center">
+                    <div class="mx-auto w-100 mb-4 ">
+                        <!-- <svg fill="green" class="teamLogo" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m136.027 107h-20.026c-.6 0-1.001.401-1.001 1.003v31.392c0 .602.401 1.003 1.001 1.003h4.806c.601 0 1.002-.401 1.002-1.003v-12.236h12.015c.601 0 1.001-.401 1.001-1.003v-4.312c0-.602-.4-1.003-1.001-1.003h-12.015v-7.522h14.318c.601 0 1.001-.402 1.001-1.003v-4.313c-.1-.502-.6-1.003-1.101-1.003zm52.467 19.157c1.502-.602 2.804-1.605 3.905-2.909 1.302-1.604 1.902-3.61 1.902-6.017 0-1.906-.4-3.711-1.301-5.216-.901-1.504-2.203-2.808-3.805-3.61-1.602-.903-3.505-1.304-5.607-1.304h-12.216c-.601 0-1.001.401-1.001 1.003v31.392c0 .602.4 1.003 1.001 1.003h4.806c.601 0 1.002-.401 1.002-1.003v-12.236h4.305l6.308 12.637c.2.301.501.602.901.602h5.507c.301 0 .701-.2.901-.501a.91.91 0 0 0 0-1.003zm-11.314-12.838h6.007c1.402 0 2.403.301 3.204 1.103.801.702 1.102 1.605 1.102 2.909 0 1.203-.401 2.106-1.102 2.808-.801.702-1.802 1.103-3.204 1.103h-6.007zm55.571-6.318h-22.029c-.6 0-1.001.401-1.001 1.003v4.312c0 .602.401 1.003 1.001 1.003h7.61v26.077c0 .602.401 1.003 1.001 1.003h4.706c.601 0 1.002-.401 1.002-1.003v-26.077h7.609c.601 0 1.002-.401 1.002-1.003v-4.312c.1-.502-.401-1.003-.901-1.003zm26.433 0h-20.025c-.601 0-1.001.401-1.001 1.003v31.392c0 .602.4 1.003 1.001 1.003h20.025c.601 0 1.002-.401 1.002-1.003v-4.313c0-.602-.401-1.003-1.002-1.003h-14.318v-7.422h12.016c.6 0 1.001-.401 1.001-1.003v-4.212c0-.602-.401-1.003-1.001-1.003h-12.016v-7.121h14.318c.601 0 1.002-.401 1.002-1.003v-4.312c0-.502-.501-1.003-1.002-1.003zm21.428.702a.961.961 0 0 0 -.901-.702h-3.805a.96.96 0 0 0 -.901.702l-11.515 31.392c-.1.301-.1.602.1.903s.501.401.801.401h5.107c.4 0 .801-.301.901-.702l1.902-5.617h10.914l1.903 5.617c.1.401.5.702.901.702h5.106c.301 0 .601-.201.801-.401.201-.301.201-.602.1-.903zm.601 20.36h-6.809l3.504-9.829zm43.555-21.062h-4.806c-.4 0-.701.2-.901.601l-8.01 17.552-8.211-17.552c-.2-.401-.5-.601-.901-.601h-4.806c-.601 0-1.001.401-1.001 1.003v31.392c0 .602.4 1.003 1.001 1.003h4.806c.601 0 1.001-.401 1.001-1.003v-16.549l5.507 11.334c.201.3.501.601.902.601h3.504c.401 0 .701-.2.901-.601l5.307-11.233v16.548c0 .602.401 1.003 1.001 1.003h4.807c.6 0 1.001-.401 1.001-1.003v-31.392c-.1-.602-.501-1.103-1.102-1.103zm26.935 16.348c-.701-.702-1.602-1.204-2.604-1.605-1.001-.401-2.202-.702-3.704-.903l-3.605-.501c-.601-.1-1.201-.201-1.802-.502-.501-.2-1.001-.501-1.202-.702-.6-.501-.801-1.203-.801-2.206 0-.803.2-1.404.501-2.006.4-.602.901-1.003 1.502-1.304.701-.301 1.602-.501 2.603-.501.901 0 1.702.1 2.403.2s1.402.401 2.003.702a6.785 6.785 0 0 1 1.802 1.304.967.967 0 0 0 1.402 0l3.104-3.009c.2-.2.3-.501.3-.702 0-.301-.1-.501-.3-.702-1.402-1.304-3.004-2.307-4.606-2.908-1.602-.602-3.605-.903-5.807-.903-2.303 0-4.306.401-6.008 1.203a9.366 9.366 0 0 0 -4.005 3.611c-.901 1.504-1.402 3.31-1.402 5.316 0 2.808.901 5.115 2.603 6.719 1.602 1.505 3.705 2.408 6.509 2.809l3.704.501c.801.1 1.502.301 1.903.401.4.101.701.301 1.001.702.601.502.901 1.405.901 2.508 0 1.203-.4 2.106-1.301 2.708-1.002.702-2.404 1.103-4.206 1.103-1.001 0-2.002-.1-2.803-.301-.801-.2-1.602-.501-2.404-.903a9.782 9.782 0 0 1 -2.102-1.604c-.2-.201-.401-.301-.701-.301s-.501.1-.701.301l-3.204 3.109c-.2.2-.3.401-.3.702s.1.501.3.702c1.602 1.605 3.304 2.708 5.207 3.41 1.902.702 4.105 1.003 6.608 1.003 1.702 0 3.404-.201 4.806-.702a10.315 10.315 0 0 0 3.905-2.006c1.102-.903 2.003-2.006 2.603-3.31.601-1.304.902-2.708.902-4.212-.1-3.21-1.102-5.617-3.004-7.221zm-198.302-16.645a12.197 12.197 0 0 0 -9.086 3.706c-3.315 3.34-3.315 7.53-3.315 12.83v.92c0 5.3 0 9.521 3.315 12.83a12.234 12.234 0 0 0 4.159 2.809c1.563.638 3.241.943 4.927.896a12.104 12.104 0 0 0 4.904-.9 12.19 12.19 0 0 0 4.135-2.805c3.362-3.388 3.362-7.45 3.362-13.06v-.444c0-5.618 0-9.672-3.362-13.06a12.174 12.174 0 0 0 -4.134-2.813 12.11 12.11 0 0 0 -4.905-.909zm-3.63 8.284a4.772 4.772 0 0 1 3.63-1.523 4.586 4.586 0 0 1 1.954.365c.617.263 1.17.658 1.621 1.158 1.094 1.222 1.433 2.579 1.433 8.728s-.339 7.466-1.449 8.728c-.449.502-1.002.9-1.619 1.164a4.563 4.563 0 0 1 -1.956.367 4.744 4.744 0 0 1 -3.637-1.539c-1.055-1.183-1.386-2.539-1.386-8.688 0-6.15.346-7.522 1.409-8.76z"
+                                fill="white" />
+                            <path d="m84.021 75.995v31h-73.021v-31h-11v42h95v-42z" fill="#bcbbbb" />
+                            <path
+                                d="m21.057 96.995h52.943v-10h-52.943zm1.058-23.915 51.428 10.794 2.117-10.265-51.43-10.794zm6.773-24.656 47.618 22.222 4.445-9.524-47.621-22.222-4.444 9.524zm13.227-23.386 40.423 33.65 6.773-8.042-40.53-33.65zm26.032-24.868-8.467 6.243 31.323 42.223 8.465-6.244z"
+                                fill="#f48024" />
+                            <path
+                                d="m135.965 73.416-6.753-.614c-5.321-.41-7.367-2.592-7.367-6.14 0-4.297 3.274-6.958 9.414-6.958 4.365 0 8.185 1.024 11.187 3.343l4.025-4.025c-3.752-3.07-9.141-4.502-15.144-4.502-9.005 0-15.485 4.639-15.485 12.347 0 6.958 4.366 10.642 12.551 11.324l6.958.614c4.844.41 7.027 2.456 7.027 6.14 0 4.979-4.298 7.435-11.188 7.435-5.252 0-9.754-1.365-13.097-4.844l-4.093 4.094c4.639 4.434 10.164 6.072 17.259 6.072 10.164 0 17.122-4.707 17.122-12.825 0-7.913-5.048-10.778-12.416-11.46zm52.663-18.896c-6.753 0-10.983 1.364-14.735 6.071-.068.068 4.025 4.025 4.025 4.025 2.456-3.479 5.253-4.775 10.642-4.775 7.708 0 10.778 3.07 10.778 9.209v4.025h-12.688c-9.414 0-14.53 4.775-14.53 12.142 0 3.343 1.091 6.48 3.138 8.527 2.66 2.729 6.071 3.82 11.869 3.82 5.662 0 8.732-1.091 12.143-4.502v4.025h6.139v-28.583c.068-9.072-5.457-13.984-16.781-13.984zm10.71 27.696c0 3.479-.682 5.934-2.115 7.299-2.66 2.592-5.798 2.796-9.414 2.796-6.685 0-9.686-2.319-9.686-7.162 0-4.844 3.069-7.436 9.413-7.436h11.802zm30.287-22.239c4.025 0 6.481 1.228 9.687 4.707l4.093-4.025c-4.298-4.638-7.981-6.139-13.78-6.139-10.641 0-18.622 7.163-18.622 21.556 0 14.394 8.049 21.556 18.622 21.556 5.799 0 9.482-1.569 13.848-6.276l-4.161-4.024c-3.138 3.479-5.662 4.775-9.687 4.775-4.092 0-7.503-1.637-9.754-4.775-1.979-2.729-2.729-6.003-2.729-11.324 0-5.32.75-8.527 2.729-11.324 2.251-3.07 5.662-4.707 9.754-4.707zm52.731-4.98h-7.708l-19.101 18.555v-37.314h-6.139v60.917h6.139v-15.349l7.504-7.503 14.121 22.852h7.64l-17.463-27.15 15.007-15.007zm28.992-2.182c-6.481 0-10.847 2.524-13.575 5.389-3.957 4.093-4.98 9.072-4.98 16.985 0 7.982 1.023 12.961 4.98 17.054 2.66 2.865 7.094 5.39 13.575 5.39 6.48 0 10.914-2.525 13.643-5.39 3.956-4.093 4.98-9.072 4.98-17.054 0-7.913-1.024-12.892-4.98-16.985-2.729-2.865-7.163-5.39-13.643-5.39zm5.116 33.016c-1.296 1.296-2.933 1.91-5.116 1.91s-3.82-.682-5.048-1.91c-2.251-2.251-2.524-6.14-2.524-10.71s.273-8.322 2.524-10.573c1.296-1.296 2.865-1.91 5.048-1.91s3.888.682 5.116 1.91c2.251 2.25 2.524 6.07 2.524 10.573 0 4.57-.273 8.459-2.524 10.71zm42.566-32.539-8.868 27.082-8.936-27.082h-11.46l16.167 43.863h8.595l16.099-43.863zm30.152-.477c-11.392 0-19.101 8.05-19.101 22.374 0 17.736 9.96 22.443 20.26 22.443 7.913 0 12.211-2.456 16.645-6.89l-6.617-6.48c-2.797 2.797-5.116 4.093-9.959 4.093-6.14 0-9.619-4.093-9.619-9.755h27.423v-4.91c.068-12.006-6.822-20.874-19.032-20.874zm-8.323 18.281c.069-1.91.342-3.138 1.024-4.706 1.159-2.593 3.615-4.57 7.299-4.57 3.683 0 6.139 1.91 7.299 4.57.682 1.569.955 2.796 1.023 4.706zm43.59-13.575v-4.229h-10.71v43.863h10.915v-26.4c0-5.525 3.683-8.05 7.094-8.05 2.661 0 4.093.888 5.799 2.593l8.254-8.322c-3.002-3.002-6.072-4.093-10.369-4.093-4.639-.068-8.868 2.114-10.983 4.639zm24.762-8.8v48.366h10.915v-34.587h8.118v-8.32h-8.05v-4.775c0-2.524 1.296-3.957 3.888-3.957h4.23v-9.278h-6.208c-9.004 0-12.893 6.344-12.893 12.552zm64.055 4.094c-6.481 0-10.846 2.524-13.575 5.389-3.957 4.093-4.98 9.072-4.98 16.985 0 7.982 1.023 12.961 4.98 17.054 2.66 2.865 7.094 5.39 13.575 5.39 6.48 0 10.914-2.525 13.643-5.39 3.957-4.093 4.98-9.072 4.98-17.054 0-7.913-1.023-12.892-4.98-16.985-2.66-2.865-7.163-5.39-13.643-5.39zm5.184 33.016c-1.296 1.296-2.933 1.91-5.116 1.91s-3.82-.682-5.048-1.91c-2.251-2.251-2.524-6.14-2.524-10.71s.273-8.322 2.524-10.573c1.296-1.296 2.865-1.91 5.048-1.91s3.888.682 5.116 1.91c2.251 2.25 2.524 6.07 2.524 10.573 0 4.57-.273 8.459-2.524 10.71zm65.146-32.539-7.094 27.082-9.005-27.082h-7.981l-8.936 27.082-7.095-27.082h-11.596l13.438 43.863h9.005l9.141-27.491 9.14 27.49h9.005l13.507-43.862zm-99.185 30.629v-47.751h-10.915v48.433c0 6.208 3.82 12.552 12.825 12.552h6.207v-9.278h-4.229c-2.797 0-3.888-1.364-3.888-3.956zm-318.976-22.238 5.661-5.662h-11.664v-13.916h-6.14v43.725c0 6.276 3.616 11.324 10.778 11.324h4.366v-5.321h-3.274c-3.957 0-5.73-2.32-5.73-6.14v-24.009h6.003z"
+                                fill="white" />
+                        </svg> -->
+                        <img src="https://stackoverflow.design/assets/img/logos/teams/teams-logo.svg" style="fill:red;"
+                            class="bg-white teamLogo" alt="">
+                    </div>
+                    <h2 class="text-center">Capture your company’s knowledge and context in a discoverable format to
+                        <span>unblock team</span>
+                        <h1>
+                            <button class="btn btn-sec d-block mx-auto font-weight-bold mt-5 my-2">Take a tour of
+                                Teams</button>
+                </div>
+
+                <div class="d-flex justify-content-around specRow3">
+                    <div class="col-lg-4 text-center">
+                        <div class="">
+                            <h4 class="font-weight-bold">Increase productivity</h4>
+                            <p>Knowledge is reused and collaboration happens asynchronously, especially crucial in a
+                                remote,
+                                fully-distributed
+                                environment.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <div class="">
+                            <h4 class="font-weight-bold">Accelerate time to market</h4>
+                            <p>Less distractions and duplication of effort means your team can concentrate on shipping.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <div class="">
+                            <h4 class="font-weight-bold">Protect institutional knowledge</h4>
+                            <p>Information is not locked away in specific people or teams, so there is a historical
+                                record.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="text-center mx-auto">
+                        <h1 class="mx-auto">Ensure your company stays on course</h1>
+                        <p>Here are just a few types of technologists that we help.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-around specRow3 mx-auto">
+                    <div class="col-lg-2 text-center">
+                        <div class="text-cenetr">
+                            <i class="fas fa-3x fa-rocket"></i>
+                            <h4 class="font-weight-bold">DevOps Enginners</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                        <div class="">
+                            <i class="fas fa-3x fa-coins"></i>
+                            <h4 class="font-weight-bold">Data Scientist Analyst</h4>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                        <div class="text-cenetr">
+                            <i class="fab fa-3x fa-uncharted"></i>
+                            <h4 class="font-weight-bold">Software engineers</h4>
+                            <!-- <p>
+                                Help engineers be more efficient and streamline knowledge sharing using a tool they
+                                already love and trust.
+                            </p> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                        <div class="">
+                            <i class="fas fa-3x fa-users"></i>
+                            <h4 class="font-weight-bold">Engineering leaders</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                        <div class="text-cenetr">
+                            <i class="fas fa-3x fa-headphones"></i>
+                            <h4 class="font-weight-bold">24x7 Support Teams</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Billing & Payments  -->
+                <div class="d-flex justify-content-between specRow3 mx-auto" id="payment">
+                    <div
+                        class="col-lg-3 payment-col-2 border-right d-flex flex-column justify-content-between align-itemse-center">
+                        <div class="">
+                            <p><span>Free</span></p>
+                            <p>Free knowledge sharing and collaboration platform</p>
+                            <p class="mb-0 mt-4" style="font-size: 2rem;">Free</p>
+                            <p class="">No credit card required</p>
+                            <hr style="color: orange;">
+                            <p class="mb-2">
+                                ChatOps integrations - Slack & Microsoft Teams
+                            </p>
+                            <p class="mb-2">Your own private space hosted on stackoverflow.com
+                            </p>
+                            <p class="mb-2">Structured and searchable knowledge base</p>
+                        </div>
+                        <div class="">
+                            <button class="btn btn-pri d-block mx-auto font-weight-bold mt-5 my-2">Create a free
+                                team</button>
+                            <p class="text-center">Always free up to 50 teammates</p>
+
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-3 payment-col-2 border-right d-flex flex-column justify-content-between align-itemse-center">
+                        <div class="">
+                            <p><span>Basic</span></p>
+                            <p>Centralized knowledge and collaboration platform for small and growing teams</p>
+                            <p class="mb-0 mt-4" style="font-size: 2rem;">$6 USD</p>
+                            <p class="">No credit card required</p>
+                            <hr style="color: orange;">
+                            <p class="mb-2">
+                                Fully searchable archive
+                            </p>
+                            <p class="mb-2">Single sign-on (SSO) with SAML
+                            </p>
+                            <p class="mb-2">Your own private space hosted on stackoverflow.com
+                            </p>
+                            <p class="mb-2">Structured and searchable knowledge base
+                            </p>
+                        </div>
+                        <div>
+                            <button class="btn bg-secondary d-block mx-auto font-weight-bold mt-5 my-2">Create a free
+                                team</button>
+                            <p class="text-center">Up to 250 teammates</p>
+
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-3 payment-col-2 border-right d-flex flex-column justify-content-between align-itemse-center">
+                        <div class="">
+                            <p><span>Business</span></p>
+                            <p> For small and medium sized businesses seeking advanced administrative tools</p>
+                            <p class="mb-0 mt-4" style="font-size: 2rem;">$12 USD</p>
+                            <p class="">per teammate / month</p>
+                            <hr style="color: orange;">
+                            <p class="mb-2">
+                                All the features of Basic plus…
+                            </p>
+                            <p class="mb-2">
+                                Long-form knowledge with Articles
+                            </p>
+                            <p class="mb-2">
+                                Group content together into Collections
+                            </p>
+                            <p class="mb-2">
+                                Usage and adoption metrics
+                            </p>
+                            <p class="mb-2">
+                                Priority customer support
+                            </p>
+                        </div>
+                        <div>
+                            <button class="btn bg-light d-block mx-auto font-weight-bold mt-5 my-2">Create a free
+                                team</button>
+                            <p class="text-center">Unlimited teammates</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 payment-col-2 d-flex flex-column justify-content-between align-itemse-center">
+                        <div class="">
+                            <p><span>Enterprise</span></p>
+                            <p>For medium to large businesses with additional security, configurability and content
+                                management needs
+                            </p>
+                            <p class="mb-0 mt-4" style="font-size: 2rem;">Custom pricing</p>
+                            <p class="">Let’s talk about what you need
+                            </p>
+                            <hr style="color: orange;">
+                            <p class="mb-2">
+                                Premium features of Business plus…
+                            </p>
+                            <p class="mb-2">Flexible hosting options — cloud or on-premises
+                            </p>
+                            <p class="mb-2">Robust read and write API</p>
+                            <p class="mb-2">Your own customer success and community building representative
+                            </p>
+                            <p class="mb-2">99.5% uptime SLA and priority support</p>
+                        </div>
+                        <div class="">
+                            <button class="btn bg-info d-block mx-auto font-weight-bold mt-5 my-2">Create a free
+                                team</button>
+                            <p class="text-center">Unlimited teammates</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AFTER PAY  -->
+                <div class="d-flex justify-content-around specRow3 afterPay">
+                    <div class="col-lg-3 text-center">
+                        <div class="text-center">
+                            <h5 class="">
+                                A Forrester Consulting study shows <span>179% return on investment</span> with Stack
+                                Overflow for Teams.
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <div class="">
+                            <h5>The world’s largest telecom firm <span>saved $10M</span> in deflected support cases with
+                                our centralized knowledge base.
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-center borderAqua">
+                        <div class="text-cenetr">
+                            <h5>
+                                Subject-matter experts at software platform Unqork had <span>27% more time</span> to
+                                work on projects
+                                after using Teams.
+
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-center" style="border-right: 2px solid transparent;">
+                        <div class="text-cenetr">
+                            <h5>You can save money and time with Stack Overflow for Teams</h5>
+                        </div>
+                        <button class="btn btn-outline-info my-sm-0" type="submit">Calculate your ROI</button>
+                    </div>
+                </div>
+
+                <!-- PAID TOP TIER  -->
+                <div class="d-flex justify-content-around specRow3 topTier">
+                    <div class="col-lg-3 text-center d-none d-xl-block">
+                        <div class="text-center">
+                            <img class="w-100"
+                                src="https://cdn.sstatic.net/Img/home/illo-integrations-left.png?v=0a97d470e180" alt="">
+                            <h5 class="">
+                                <img src="teams.png" style="height: 35px; width: 40px; margin-right: 8px;" alt="">
+                                MICROSOFT TEAMS
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-xl-5 text-center d-flex flex-column justify-content-center ">
+                        <div>
+                            <div class="mb-5">
+                                <h2>Integrates with and improves other tools</h2>
+                            </div>
+                            <div>
+                                <p class="lead">
+                                    All plans come with integrations for ChatOps tools Slack & Microsoft Teams in order
+                                    to
+                                    cut down on pings, limit
+                                    distractions and make the tools even more powerful. Business and Enterprise
+                                    customers
+                                    get access to Jira, GitHub & Okta
+                                    integrations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-center borderAqua d-none d-xl-block">
+                        <div class="text-cenetr">
+                            <h5>
+                                <img class="" style="height: 35px; width: 40px; margin-right: 8px;" src="slack.png"
+                                    alt="">
+                                Slack
+                            </h5>
+                            <img class="w-100"
+                                src="https://cdn.sstatic.net/Img/home/illo-integrations-right.png?v=90c26b9154c7"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+
+    <!-- TESTIMONIAL  -->
+    <div class="container-fluid testimonial ">
+        <div class="row row-cols-sm-1 row-cols-lg-2 row-cols-xl-4">
+            <div
+                class="firstTwo col-lg-6 col-md-6 col-xl-3 d-flex flex-column justify-content-between align-itemse-center">
+                <div class="">
+                    <i class="fas fa-3x fa-quote-right"></i>
+                    <p>
+                        Stack Overflow for Teams has been a resource for our entire company. Not only for developers to
+                        solve problems, it’s
+                        also enabled our sales field to answer technical questions that help them close deals.
+                    </p>
+                </div>
+                <div class="mt-2">
+                    <h6 class="mb-0">Director of Product Management</h6>
+                    <p>Microsoft</p>
+                </div>
+            </div>
+            <div
+                class="firstTwo col-lg-6 col-md-6 col-xl-3 d-flex flex-column justify-content-between align-itemse-center">
+                <div>
+                    <i class="fas fa-3x fa-quote-right"></i>
+                    <p>
+                        Engineers should help solve the hardest questions, the unknowns, where being familiar with how
+                        the
+                        product was built is
+                        essential. But we don’t want to keep answering solved problems over and over again. That’s where
+                        Stack Overflow for
+                        Teams really helps.
+                    </p>
+                </div>
+                <div class=" mt-2">
+                    <h6 class="mb-0">Director of Engineering</h6>
+                    <p>Elastic Cloud</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xl-3 d-flex flex-column justify-content-between align-itemse-center">
+                <div>
+                    <i class="fas fa-3x fa-quote-right"></i>
+                    <p>
+                        As we started to use [Stack Overflow for Teams] and saw how nice it was to have a repository of
+                        information, we started
+                        to see it spread to other teams. Our customer support team started using it, our people success
+                        team
+                        started using it,
+                        next thing we knew, we had [Slack] integrations all over the place.
+                    </p>
+                </div>
+                <div class=" mt-2">
+                    <h6 class="mb-0">Engineering</h6>
+                    <p>Expensify</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xl-3 d-flex flex-column justify-content-between align-itemse-center">
+                <div>
+                    <i class="fas fa-3x fa-quote-right"></i>
+                    <p>
+                        What we love about Stack Overflow for Teams is that it’s a very dynamic tool…there’s just so
+                        many
+                        ways to use this as a
+                        liaison between different teams and different knowledge bases.
+                    </p>
+                </div>
+                <div class="mt-2">
+                    <h6 class="mb-0">Software Engineer</h6>
+                    <p>Box</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADDITIONAL FEATURES  -->
+    <div class="container additionalFeatures">
+        <div class="row">
+            <div class="col">
+                <div class="mx-auto w-100 mb-4 text-center">
+                    <img src="https://stackoverflow.design/assets/img/logos/teams/teams-logo.svg" style="fill:red;"
+                        class="bg-white teamLogo" alt="">
+                </div>
+                <h3 class="text-center">Additional products that reach and engage developers & technologists…
+                </h3>
+            </div>
+        </div>
+
+        <div class="row-gx-4 text-center addFea" style="margin: 45px 0;">
+            <div class="col-lg-4 py-3">
+
+                <h4 class="font-weight-bold mb-0">
+                    <img src="stack-overflow.png" class=""
+                        style="height: 30px; width: 40px; margin-right: 8px; margin-bottom:16px;" alt="">
+                    <!-- <i class="fa fa-2x fa-stack-overflow mr-2"></i> -->
+                    TALENT
+                </h4>
+                <a href="" class="nav-link">
+                    <p class="lead">
+                        Recruit talent & build your employer brand
+                    </p>
+                </a>
+            </div>
+            <div class="col-lg-4 py-3">
+                <h4 class="font-weight-bold mb-0">
+                    <img src="stack-overflow.png" class=""
+                        style="height: 30px; width: 40px; margin-right: 8px; margin-bottom:16px;" alt="">
+                    <!-- <i class="fab fa-2x fa-stack-overflow mr-2"></i> -->
+                    ADVERTISING
+                </h4>
+                <a href="" class="nav-link">
+                    <p class="lead">
+                        Reach the world's largest audience of developers and technologist
+                    </p>
+                </a>
+            </div>
+            <div class="col-lg-4 py-3 mb-0">
+                <h4 class="font-weight-bold">
+                    <img src="stack-overflow.png" class=""
+                        style="height: 30px; width: 40px; margin-right: 8px; margin-bottom:16px;" alt="">
+                    <!-- <i class="fab fa-2x fa-stack-overflow mr-2"></i> -->
+                    JOBS
+                </h4>
+                <a href="" class="nav-link">
+                    <p class="lead">
+                        Programming & related technical career opportunities
+                    </p>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-pri d-block mx-auto font-weight-bold">About the company</button>
+                <a href="" class="d-block text-center my-2 mx-auto">Want to work here ? <span
+                        class="text-primary">Current job
+                        opennings</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- STACK EXCHANGE  -->
+    <div class="container-fluid stackExchange">
+        <div class="row ">
+            <div class="col-lg-2 col-md-2 m-3 d-none d-xl-block" style="color: rgb(224, 39, 39);">
+                <i class="fas fa-3x fa-network-wired m-5"></i>
+                <i class="fa fa-linux fa-3x m-2"></i>
+                <i class="fa fa-opencart fa-3x ml-4"></i>
+                <i class="fa fa-openid fa-4x ml-5 mt-3 "></i>
+                <!-- <i class="fa fa-slideshare fa-3x m-5"></i> -->
+                <i class="fa fa-soundcloud fa-4x m-5"></i>
+            </div>
+            <div
+                class="col-xl-8 stackmid mx-auto text-center d-flex flex-column align-items-center justify-content-around">
+                <h2 class="">
+                    Explore technical topics and other disciplines across 170+ Q&A communities
+                </h2>
+                <p class="lead">
+                    From <span>Server Fault</span> to <span>Super User</span>, much of the Stack Exchange network
+                    continues our mission to help
+                    developers and
+                    technologists write the script of the future. Other sites on the Stack Exchange network further
+                    encourage knowledge
+                    sharing across topics such as cooking and medicine.
+                </p>
+                <button class="btn btn-sec d-block mx-auto font-weight-bold">Explore the network</button>
+            </div>
+            <div class="col-lg-2 col-md-2 m-3 d-none d-xl-block">
+                <i class="fa fa-4x m-3 fa-reddit"></i>
+                <i class="fa fa-3x m-5 fa-safari"></i>
+                <i class="fa fa-3x m-2 fa-sellsy"></i>
+                <i class="fa fa-4x mr-4 fa-twitch"></i>
+                <i class="fa fa-3x m-3 fa-vimeo-square"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- EXTRA  -->
+    <!-- <div class="container-fluid extra">
+        <div class="row">
+            <div class="col-lg-12 ">
+                <div class="mx-auto">
+                    <p class="lead text-center">
+                        <i class="fas fa-2x fa-lock lock"></i>
+                        Build a <span class="font-weight-bold text-secondary">
+                            private community</span> to share technical or non-technical knowledge.
+                        <button class="btn btn-sec mx-auto font-weight-bold createBtn">Create a free Team</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="container-fluid extra">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="mx-auto d-flex justify-content-center">
+                    <p class="lead text-center">
+                        <i class="fas fa-2x fa-lock lock"></i>
+                        Build a <span class="font-weight-bold text-secondary"> private community</span> to share
+                        technical or non-technical knowledge.
+                        <i>
+                            <button class="btn btn-sec font-weight-bold footerBtn " style="margin-bottom: 14px;">Create a free Team</button>
+                        </i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER  -->
+
+    <footer class="" style="background-color: #242729;">
+        <div class="container-fluid">
+            <div class="row row-cols-2 row-cols-lg-4 d-flex flex-row justify-content-around">
+                <div class="col-lg-1 col-sm-4 d-none d-xl-block">
+                    <img src="stack-overflow.png" class="float-right" style="height: 30px; width: 40px;" alt="">
+                    <!-- <i class="fa fa-2x fa-stack-overflow float-right"></i> -->
+                </div>
+                <div class="col-lg-2">
+                    <h4 class="font-weight-bold">STACK OVERFLOW</h4>
+                    <ul class="navbar-nav">
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Questions</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Jobs</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Developer Jobs Directory</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Salary Calculator</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Help</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Mobile</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Disable Responsive</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h4 class="font-weight-bold">PRODUCTS</h4>
+                    <ul class="navbar-nav">
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Teams</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Talent</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Advertising</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Enterprise</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h4 class="font-weight-bold">COMPANY</h4>
+                    <ul class="navbar-nav">
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">About</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Press</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Work Here</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Legal</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Terms of Service</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Contact us</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Cookie Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h4 class="font-weight-bold">STACK EXCHANGE NETWORK</h4>
+                    <ul class="navbar-nav">
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Technology</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Life / Arts</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Culture / Recreation</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Science</a>
+                        </li>
+                        <li class="nav-item mb-0">
+                            <a href="" class="nav-link pb-0">Other</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 d-custom-block col-sm-12  lFooterA" id="lastFooter">
+                    <div class="d-flex flex-column align-items-center justify-content-between">
+                        <div style="margin-bottom:30px ;">
+                            <a href="">Blog</a>
+                            <a href="">Facebook</a>
+                            <a href="">Twitter</a>
+                            <a href="">LinkedIn</a>
+                            <a href="">Instagram</a>
+                        </div>
+                        <div>
+                            <p class="small" id="lfooterP">
+                                site design / logo © 2021 Stack Exchange Inc; user contributions licensed under cc
+                                by-sa.
+                                rev 2021.3.29.38936
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 d-lg-none d-sm-block lfooter">
+                <div class="col-lg-3 col-sm-12 lFooterA " id="lastFooter">
+                    <div style="margin-bottom: 30px;">
+                        <a href="">Blog</a>
+                        <a href="">Facebook</a>
+                        <a href="">Twitter</a>
+                        <a href="">LinkedIn</a>
+                        <a href="">Instagram</a>
+                    </div>
+                    <div>
+                        <p class="small" id="lfooterP">
+                            site design / logo © 2021 Stack Exchange Inc; user contributions licensed under cc
+                            by-sa.
+                            rev 2021.3.29.38936
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
